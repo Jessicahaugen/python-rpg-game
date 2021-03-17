@@ -1,3 +1,3 @@
 # python-rpg-game
 
-i love tacos.
+# i love tacos ~\(^.^)/~
