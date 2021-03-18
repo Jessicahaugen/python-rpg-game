@@ -1,0 +1,1 @@
+Messsage = "Hail fellows well met, and welcome to the land of sanctity.  "
