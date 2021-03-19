@@ -1,15 +1,18 @@
+
 Messsage = "Hail fellows well met, and welcome to the land of sanctity. Amongst all Ladies Lords and Knights we have lost a princess. Henceforth we ask of your intentions? is thou heart (G) Chivalrous or (D) Devilish? " 
 
 class Knight:
-    def __init__(self, name, hp, ap, spell, items):
+
+    def __init__(self, name, age, hp, items, spell):
         self.name = name
-        self.ap = ap
+        self.age = age
         self.hp = hp
         self.items = items
         self.spell = spell
     
     def attack(self):
         self.hp -= 1000
+
         print(f"you have attacked and your hp has incresed 1000")
 
     def spell(self):
@@ -30,6 +33,9 @@ holy_knight = Knight("Holy Knight", 10000, "Light Excalibur", "divine light")
 mage_knight = Knight("Mage", 100000,20000,"Wrath of the Witch", "" )
 
 dragon = Knight("Dragon",500000,40000,"Dragons Breath","Dragons Treasure" )
+
+
+ 
 
 def welcome_messsage():
     print("Welcome")
