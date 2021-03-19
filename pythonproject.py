@@ -1,6 +1,8 @@
 
 Messsage = "Hail fellows well met, and welcome to the land of sanctity. Amongst all Ladies Lords and Knights we have lost a princess. Henceforth we ask of your intentions? is thou heart (G) Chivalrous or (D) Devilish? " 
 
+import random
+
 class Knight:
 
     def __init__(self, name, age, hp, items, spell):
@@ -37,10 +39,37 @@ dragon = Knight("Dragon",500000,40000,"Dragons Breath","Dragons Treasure" )
 
  
 
+mage_knight = Knight("Mage Knight", 60, 1000, "Staff", "Fire Cast")
+
 def welcome_messsage():
-    print("Welcome")
+   
+    print("""
+“⚔️ Welcome young traveler! ⚔️
+You’re about to fight the evil dragon. 
+Good job! 
+Choose your protagonist. 
+Each one has different stats! Good luck!”
+""")
 
 welcome_messsage()
-print(demon_knight.hp)
-demon_knight.attack()
-print(demon_knight.hp)
+
+num1 = random.randint(1,20)
+
+if num1 <= 5:
+    demon_knight.attack()
+elif num1 <= 7 and num1 > 5:
+    demon_knight.attack()
+elif num1 <= 10 and num1 > 7:
+    demon_knight.attack()
+elif num1 <= 14 and num1 > 10:
+    demon_knight.attack()
+elif num1 <= 16 and num1 > 14:
+    demon_knight.attack()
+elif num1 <= 20 and num1 > 17:
+    demon_knight.attack()
+else:
+    print("Something is not right")
+
+print(num1)
+
+
