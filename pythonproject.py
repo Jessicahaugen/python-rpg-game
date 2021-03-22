@@ -13,7 +13,8 @@ start_messsage = print("""
               | /_^_\
               | || ||
             __|_d|_|b__
- """ )
+ """ 
+ )
 
 
 import random
@@ -37,18 +38,7 @@ class Knight:
         
         print(f"you charmed the {char.name} and he healed {amount_healed} and is now at {char.hp}")
     
-
 dragon = Knight("Dragon",50,100)
-
-
-
-# def random_number(player1,player2):
-#     num1 = random.randint(1,20)
-#     if num1 <= 10:
-#         player1.attack()
-#     else: 
-#     # num1 <= 20 and num1 > 11:
-#         player1.charm()
 
 
 def you_won(player,dragon):
